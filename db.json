@@ -1,0 +1,60 @@
+{
+    "dashboard": {
+        "posts": 20,
+        "likes": 500,
+        "following": 300,
+        "followers":8000
+    },
+    "news": [
+        {
+            "id": 1,
+            "title": "News artical 1",
+            "description": "Description 1",
+            "category": "sports"
+        },
+        {
+            "id": 2,
+            "title": "News artical 2",
+            "description": "Description 2",
+            "category": "food"
+        },
+        {
+            "id": 3,
+            "title": "News artical 3",
+            "description": "Description 3",
+            "category": "games"
+        },
+        {
+            "id": 4,
+            "title": "News artical 4",
+            "description": "Description 4",
+            "category": "sports"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Product 1",
+            "description": "Description 1",
+            "category": "sports"
+        },
+        {
+            "id": 2,
+            "name": "Product 2",
+            "description": "Description 2",
+            "category": "food"
+        },
+        {
+            "id": 3,
+            "name": "Product 30",
+            "description": "Description 3",
+            "category": "games"
+        },
+        {
+            "id": 4,
+            "name": "Product 4",
+            "description": "Description 4",
+            "category": "grocery"
+        }
+    ]
+}
