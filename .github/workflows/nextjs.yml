@@ -31,6 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - run: npm i
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -73,8 +74,6 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Install json-server
-        run: npm i json-server
       - name: run json-server
         run: json-server --watch db.json --port 4000
       - name: Build with Next.js
