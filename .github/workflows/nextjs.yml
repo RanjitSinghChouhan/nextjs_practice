@@ -74,7 +74,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Install json-server
-        run: ${{ steps.detect-package-manager.outputs.runner }} json-server
+        run: npm i json-server
       - name: run json-server
         run: json-server --watch db.json --port 4000
       - name: Build with Next.js
